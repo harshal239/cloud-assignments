@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+  font-family: "Sora", sans-serif;
+}
+input,
+button {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+.card {
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+}
+form input[type="text"] {
+  border: 2px solid gainsboro;
+  border-radius: 0.25rem;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+}
+form input[type="text"]:focus {
+  border: 2px solid rgb(86, 86, 252);
+}
+form input[type="submit"] {
+  background-color: rgb(86, 86, 252);
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.weather__results {
+  padding: 2rem;
+  background-color: #eee;
+  border-radius: 0.25rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.weather__row {
+  display: flex;
+  gap: 0.5rem;
+}
+.weather__value {
+  font-size: 1.2rem;
+}

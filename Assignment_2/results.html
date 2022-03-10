@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        font-family: "Sora", sans-serif;
+      }
+      .weather__results {
+        padding: 2rem;
+        border-radius: 0.25rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .weather__row {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      .weather__value {
+        font-size: 1.2rem;
+        color: lightcoral;
+      }
+      .back {
+        display: flex;
+        justify-content: center;
+      }
+      .back a {
+        background-color: steelblue;
+        padding: 0.5rem 0.75rem;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 0.25rem;
+      }
+    </style>
+    <title>Post Office Finder</title>
+  </head>
+  <body>
+    <div class="weather__results">
+      <div class="weather__row">
+        <h2 class="weather__key">State of Post Office :</h2>
+        <p class="weather__value">{{ post_office }}</p>
+      </div>
+      <div class="weather__row">
+        <h2 class="weather__key">Name of Post Office :</h2>
+        <p class="weather__value">{{ name }}</p>
+      </div>
+      <div class="weather__row">
+        <h2 class="weather__key">Block of Post Office :</h2>
+        <p class="weather__value">{{ block }}</p>
+      </div>
+      <div class="weather__row">
+        <h2 class="weather__key">District of Post Office :</h2>
+        <p class="weather__value">{{ district }}</p>
+      </div>
+      <div class="back">
+        <a href="/"> Back to Home </a>
+      </div>
+    </div>
+  </body>
+</html>

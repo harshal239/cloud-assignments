@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        font-family: "Sora", sans-serif;
+      }
+      .card {
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+      }
+      .card h1 span {
+        font-size: 3rem;
+        color: rgb(239 68 68);
+      }
+      .back {
+        display: flex;
+        justify-content: center;
+      }
+      .back a {
+        background-color: steelblue;
+        padding: 0.5rem 0.75rem;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 0.25rem;
+      }
+    </style>
+    <title>404 Page</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1><span>404</span> : Pincode not found !</h1>
+      <div class="back">
+        <a href="/"> Back to Home </a>
+      </div>
+    </div>
+  </body>
+</html>

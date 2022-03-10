@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        place-items: center;
+
+        font-family: "Sora", sans-serif;
+      }
+      input,
+      button {
+        outline: none;
+        border: none;
+        font-family: inherit;
+      }
+      .card {
+        padding: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+
+        gap: 2rem;
+      }
+      form input[type="text"] {
+        border: 2px solid gainsboro;
+        border-radius: 0.25rem;
+        padding: 0.8rem;
+        font-size: 1.1rem;
+      }
+      form input[type="text"]:focus {
+        border: 2px solid rgb(86, 86, 252);
+      }
+      .btn {
+        background-color: rgb(86, 86, 252);
+        padding: 1rem 1.5rem;
+        border-radius: 0.25rem;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        width: 100%;
+      }
+      .reset__btn {
+        background-color: rgb(239 68 68);
+      }
+      .btn__container {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+    </style>
+    <title>Post Office Finder</title>
+  </head>
+  <body>
+    <div class="card">
+      <h2>Post Office Finder Using WebApp</h2>
+      <form id="weatherForm" action="/" method="post">
+        Location Zip Code:
+        <input id="weatherInput" type="text" name="zipCode" />
+        <div class="btn__container">
+          <input type="reset" value="Reset" class="btn reset__btn" />
+          <input
+            id="weatherSubmit"
+            type="submit"
+            value="Submit"
+            class="btn submit__btn"
+          />
+        </div>
+      </form>
+    </div>
+    <script>
+      function init() {
+        // Clear forms here
+        document.getElementById("weatherInput").value = "";
+      }
+      window.onload = init;
+    </script>
+  </body>
+</html>
